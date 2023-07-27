@@ -1,0 +1,76 @@
+/* Basic table styles */
+/* h2 {
+  text-align: center;
+  margin-top: 20px;
+} */
+
+/* .table-container {
+  margin-top: 10px;
+  width: 100%;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* th {
+  background-color: #f2f2f2;
+} */
+
+tbody  {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Adjust the height of the table container */
+.the {
+  min-height: 100vh;
+}
+
+/* Optional: Add some margin to the buttons */
+button {
+  margin-left: 10px;
+}
+.c1{
+  background-color: orange;
+}
+
+button{background-color: red;
+color: #f2f2f2;
+border-color: aquamarine;
+border-radius: 22%;
+
+}
+
+
+
+/* Centered table row */
+tr.c2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Apply styles for the "c2" class */
+tr.c2 {
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add padding and adjust font size for the heading */
+tr h1 {
+  padding: 10px;
+  font-size: 24px;
+}
+.h22{
+  min-height: 100vh;
+}

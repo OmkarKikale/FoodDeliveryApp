@@ -1,0 +1,22 @@
+
+<form (submit)="submitForm()">
+
+  <h3>ADD MENU LIST</h3>
+    <label for="name" style="color: antiquewhite;">Name</label>
+    
+    
+    <input type="text" id="name" name="foodName" [(ngModel)]="food.name" required>
+
+    <label for="description" style="color: antiquewhite;">Description</label>
+    <textarea id="description" name="fooddescription" [(ngModel)]="food.description" required></textarea>
+    <label for="price" style="color: antiquewhite;">Price</label>
+    <input type="number" id="price" name="price" [(ngModel)]="food.price" required>
+    <label for="imgurl" style="color: antiquewhite;">Image URL</label>
+    <input type="text" id="imgurl" name="foodName" [(ngModel)]="food.imgurl" required>
+    <button type="submit" style="color: antiquewhite;">Submit</button>
+  </form>
+
+  <div>
+    <button (onclick)="sub()"></button>
+  </div>
+  

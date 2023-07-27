@@ -1,0 +1,34 @@
+<div class="list"><h2 style="color:whitesmoke">List of Orders</h2>
+<table>
+  <thead>
+    <tr>
+      <th> Order ID</th>
+      
+      <th>Full Name</th>
+      <th>Full Address</th>
+      <th>Contact Number</th>
+      <th>Alternate Contact Number</th>
+      <th>Total Price</th>
+      <th>Quantity</th>
+      <th>Date of order</th>
+      <th>Order Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.id }}</td>
+      
+      <td>{{ order.fullname }}</td>
+      <td>{{ order.fullAddress }}</td>
+      <td>{{ order.contactNumber }}</td>
+      <td>{{ order.alternateContactNumber }}</td>
+      <td>{{ order.price }}</td>
+      <td>{{ order.quantity }}</td>
+      <td>{{ order.date}}</td>
+      <td>{{order.orderStatus}}</td>
+      <td> <button type="button" class="btn btn-primary"  *ngIf="order.orderStatus == 'Placed' "  (click)="markOrderDelivered(order.id)">Deliery</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

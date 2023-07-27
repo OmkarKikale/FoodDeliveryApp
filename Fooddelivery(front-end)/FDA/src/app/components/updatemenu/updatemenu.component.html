@@ -1,0 +1,31 @@
+<div class="h22"><tr class="c2" ><h1>Delete Foods</h1></tr>
+
+<table class="menu-table">
+  <thead class="c1">
+    
+    <tr>
+      
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Action</th>
+      <!-- Add other columns as needed -->
+      <!-- An empty cell for the Delete button column -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of menuItems">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.description }}</td>
+      <td>{{ item.price }}</td>
+    
+      <td>
+        <button (click)="deleteMenuItem(item.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>

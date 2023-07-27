@@ -1,0 +1,33 @@
+/* Basic table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #d79e32;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #2db080;
+  }
+  
+  /* Alternating row colors for better readability */
+  /* tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+
+  tbody{
+    background-color: blanchedalmond;
+  }
+  
+  /* Hover effect for rows */
+  /* tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+   */
+   .list{
+    min-height: 100vh; 
+   }

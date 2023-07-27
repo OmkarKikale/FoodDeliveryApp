@@ -1,0 +1,25 @@
+
+<div class="therock"><form (submit)="submitForm()" class="order-form">
+  <h3>ORDER FORM</h3>
+  <label for="name" class="form-label">Full Name</label>
+  <input type="text" id="name" name="fullname" [(ngModel)]="order.fullname" required>
+
+  <label for="description" class="form-label">Full Address</label>
+  <textarea id="description" name="fullAddress" [(ngModel)]="order.fullAddress" required></textarea>
+
+  <label for="price" class="form-label">Contact Number</label>
+  <input type="number" id="price" name="contactNumber" [(ngModel)]="order.contactNumber" required>
+
+  <label for="imgurl" class="form-label">Alternate Contact Number</label>
+  <input type="text" id="imgurl" name="alternateContactNumber" [(ngModel)]="order.alternateContactNumber" required>
+
+  <label for="date" class="form-label">Date</label>
+    <input type="date" id="date" name="date" [(ngModel)]="order.date" required>
+
+  
+
+  <div class="form-total">Total Quantity: {{ totalQuantity }}</div>
+  <div class="form-total">Total Price: {{ totalPrice }}</div>
+  <button type="submit" class="submit-button">Submit</button>
+</form>
+</div>

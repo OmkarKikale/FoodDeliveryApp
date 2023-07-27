@@ -1,0 +1,47 @@
+
+<div class="the"> 
+<!-- <h2 align="text-center">FOOD LIST </h2> -->
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Food name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Food ID</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let f of foods">
+        <td>{{ f.name }}</td>
+        <td>{{ f.description}}</td>
+        <td>{{ f.price }}</td>
+        <td>{{ f.id}}</td>
+        <td>{{f.quantity}}</td>
+        <td>
+          <!-- <button  class="btn btn-info" (click)="updateFood(f.id, updatedFood)">Update</button> -->
+          <button (click)="deleteFood(f.id)"class="btn btn-danger" style="margin-left: 10px">Delete</button>
+         
+        </td>
+
+        
+
+      </tr>
+      
+      
+    </tbody>
+  </table>
+<div style="color: aliceblue;">Total Quantity: {{ totalQuantity }}</div>
+<div style="color: aliceblue;">Total Price: {{ totalPrice }}</div>
+
+<div align="right" >
+  <button  align="right"class="btn btn-primary"  (click)="checkout()">Checkout</button>
+</div>
+
+
+<!-- (click)="updateEmployee(employee.id)"
+(click)="deleteEmployee(employee.id)"
+(click)="employeeDetails(employee.id)"  -->
+
+</div>
